@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RAILWAY RESISTRATION</title>
+	<script type="text/javascript">
+		function check() {
+			// body...
+			var t = document.getElementById('name').value;
+			var pattern="^[a-zA-Z]+$";
+			var reg = new RegExp(pattern);
+			if (reg.test(t)) {
+				document.getElementById("name1").innerHTML="Valid name";
+			}
+			else{
+				document.getElementById("name1").innerHTML="Invalid name";
+			}
+
+			var m = document.getElementById('mobile').value;
+			var pattern1="^[0-9]{10}$";
+			var reg = new RegExp(pattern1);
+			if (reg.test(m)) {
+				document.getElementById("mobile1").innerHTML="Valid mobile";
+			}
+			else{
+				document.getElementById("mobile1").innerHTML="Invalid mobile";
+			}
+
+			var p = document.getElementById('pin').value;
+			var pattern2="^[0-9]+$";
+			var reg = new RegExp(pattern2);
+			if (reg.test(p)) {
+				document.getElementById("pin1").innerHTML="Valid pin";
+			}
+			else{=
+				document.getElementById("pin1").innerHTML="Invalid pin";
+			}
+
+			var a = document.getElementById('age').value;
+			var pattern3="^[0-9]+$";
+			var reg = new RegExp(pattern3);
+			if (reg.test(a)) {
+				document.getElementById("age1").innerHTML="Valid age";
+			}
+			else{
+				document.getElementById("age1").innerHTML="Invalid age";
+			}
+		}
+	</script>
+</head>
+<body>
+	<form>
+	<table align="center" style="border: 7px double blue ; background-image: url(14.jpeg);">
+	<tr>
+	<td>
+	<table align="center">
+	<tr>
+	<td><img src="2.jpeg"></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td><h1 align="center">RAILWAY RESISTRATION</h1></td>
+	</tr>
+	</table>
+	<table align="center" cellpadding="10px">
+		<tr>
+			<td>Enter Name </td>
+			<td>:</td>
+			<td><input type="text" name="First Name" placeholder="Frist Name" required="required" id="name"><span id="name1"> </span></td>
+			<td><input type="text" name="Middle Name" placeholder="Middle Name" required="required" id="name"><span id="name1"> </span></td>
+			<td><input type="text" name="Last Name" placeholder="Last Name" required="required" id="name"><span id="name1"> </span></td>
+		</tr>
+		<tr>
+			<td>Mobile No</td>
+			<td>:</td>
+			<td><input type="text" name="Mobile No" placeholder=" Enter Mobile NO" required="required" id="mobile"><span id="mobile1"> </span></td>
+			<td align="right">E-Mail :</td>
+			<td><input type="text" name="Enter E-Mail" placeholder="Enter E-Mail" required="required"></td>
+		</tr>
+		<tr>
+			<td>Occupation</td>
+			<td>:</td>
+			<td><input type="text" name="Occupation" placeholder="Occupation" required="required"></td>
+			<td align="right">Age :</td>
+			<td><input type="text" name="Age" placeholder="Age" required="required" id="age"><span id="age1"> </span></td>
+		</tr>
+		<tr>
+			<td>Address</td>
+			<td>:</td>
+			<td><textarea rows="3" placeholder="Address" required="required"></textarea></td>
+		</tr>
+		<tr>
+			<td>City</td>
+			<td>:</td>
+			<td><input type="text" name="City" placeholder="City" required="required">
+			<td align="right">Pin :</td>
+			<td><input type="text" name="Pin" placeholder="Pin" required="required" id="pin"><span id="pin1"> </span></td>
+		</tr>
+		<tr>
+			<td>State</td>
+			<td>:</td>
+			<td><input type="text" name="State" placeholder="state" required="required">
+			<td align="right">Country :</td>
+			<td><input type="text" name="Country" placeholder="Countrys" required="required">
+		</tr>
+		<tr>
+			<td colspan="5" align="center">
+				<input type="Submit" name="Submit" value="Register" onclick="check()">
+				<input type="reset" name="reset" value="Reset">
+			</td>
+		</tr>	
+	</table>
+	</td>
+	</tr>
+	</table>
+</body>
+</html>
